@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Assignment3';
+  log= [];
+  show= false;
+  onToggle(){
+    this.show = !this.show;
+    this.log.push(this.log.length +1);
+  }
 }
